@@ -116,6 +116,7 @@ public class Main {
         String texto;
         do {
             System.out.print(rotulo);
+            System.out.flush();
             texto = entrada.nextLine().trim();
         } while (texto.isEmpty());
         return texto;
@@ -124,6 +125,7 @@ public class Main {
     private static int lerInteiro(String rotulo) {
         while (true) {
             System.out.print(rotulo);
+            System.out.flush();
             String linha = entrada.nextLine().trim();
             try {
                 return Integer.parseInt(linha);
@@ -136,6 +138,7 @@ public class Main {
     private static double lerDecimal(String rotulo) {
         while (true) {
             System.out.print(rotulo);
+            System.out.flush();
             String linha = entrada.nextLine().trim().replace(",", ".");
             try {
                 double valor = Double.parseDouble(linha);
